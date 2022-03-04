@@ -1,25 +1,18 @@
 /* Primary  */
 $black: #000000;
 $white: #FFFFFF;
-$red-primary: #B80000;
+$red-primary: #F20F38;
 
 /* Secondary */
 $gray: #4D4D4D;
 $lightgray: #666666;
 $white-dim: rgba(255,255,255,0.5);
+$placeholder: #666666;
 
-$green-button: #00C16B;
-$orange-button: #FF9733;
-$gray-button: #CECECE;
-
-$gray-background: #FAFAFA;
-$black-background: #000000;
-
-$placeholder: #888888;
-$black-form-label: #000000;
-$gray-form-label: #666666;
-$gray-form-border: #4D4D4D;
-$black-form-border: #000000;
-$gray-form-active: #BDBDBD;
-$red-form-error: #B80000;
-$hashtag-border: #666666;
+.test {
+  border-radius: 1px solid $red-primary;
+  -webkit-border-radius: 1px solid $red-primary;
+  -moz-border-radius: 1px solid $red-primary;
+  -ms-border-radius: 1px solid $red-primary;
+  -o-border-radius: 1px solid $red-primary;
+}

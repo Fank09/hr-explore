@@ -1,0 +1,84 @@
+body {
+  font-size: 78%;
+  word-wrap: break-word;
+}
+
+td, th {
+  word-wrap: break-word;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+address, body, caption, cite, code, dd, dfn, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, li, ol, option, p, pre, select, strong, table, td, th, ul, var {
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+dl dl, dl ol, dl ul {
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+td td {
+  font-size: 100%;
+}
+
+ul {
+  font-size: 100%;
+  list-style: none;
+}
+ul.disc li {
+  list-style: disc inside;
+}
+
+a, body a:hover, img {
+  text-decoration: none;
+}
+
+a, img {
+  display: block;
+}
+
+fieldset {
+  border: 0;
+}
+
+img {
+  background-color: transparent;
+  border: 0;
+  font-size: 0;
+  overflow: hidden;
+  text-indent: -999px;
+  vertical-align: bottom;
+}
+
+hr {
+  display: none;
+}
+
+input, select, textarea, button, [type=button], [type=reset], [type=submit] {
+  -moz-appearance: none;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+button:focus {
+  outline: none;
+}

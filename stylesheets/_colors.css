@@ -1,2 +1,9 @@
 /* Primary  */
 /* Secondary */
+.test {
+  border-radius: 1px solid #F20F38;
+  -webkit-border-radius: 1px solid #F20F38;
+  -moz-border-radius: 1px solid #F20F38;
+  -ms-border-radius: 1px solid #F20F38;
+  -o-border-radius: 1px solid #F20F38;
+}
