@@ -12,13 +12,16 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.0">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/application.css">
   <link rel="stylesheet" href="stylesheets/base.css">
+  <link rel="stylesheet" href="stylesheets/home.css">
   <link rel="stylesheet" href="stylesheets/plugins/semantic.min.css">
   <link rel="stylesheet" href="fonts/lineawesome/css/line-awesome.css">
+  <link rel="stylesheet" href="javascript/plugins/owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="javascript/plugins/owlcarousel/owl.carousel.min.css">
 </head>
 
 <body>
@@ -29,7 +32,7 @@
           <li class="logo">
             <a href="index.html"><img src="images/logo/hr-exp-logo.png" alt="HR Explore"></a>
           </li>
-          <li class="search">
+          <!-- <li class="search">
             <div class="search-form">
               <div class="wrap">
                 <div class="search-key">
@@ -50,7 +53,7 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> -->
           <li class="btn-group">
             <ul class="list">
               <li class="btn-search">
@@ -88,22 +91,263 @@
           </div>
         </div>
       </div>
-      <div id="banner">#BANNER</div>
-    </header>
-
-    <div id="content">
-      <div class="wrapper">
-        <div id="PageName">
-          <div class="inner">
-            <div class="main">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illo reiciendis, accusantium consectetur quae
-              ratione vel dolore praesentium nulla. Repellat labore amet magni aut debitis et deserunt eaque optio at,
-              ullam illo tempore fugiat. Architecto hic exercitationem saepe suscipit ducimus beatae non. Eius soluta a
-              iste sit, labore dolorem expedita.
+      <div id="banner">
+        <div class="caption">
+          <h1>Explore Your Right HR Products</h1>
+          <h2>Let’s searching top HR and Recruiting service providers
+            for your business. Reliable Reviews & Rating.</h2>
+          <div class="search">
+            <div class="search-form">
+              <div class="wrap">
+                <div class="search-key">
+                  <div class="selecting-all">
+                    <div class="ui top left pointing dropdown">
+                      <div class="text">ทั้งหมด</div>
+                      <div class="menu">
+                        <div class="item">ทั้งหมด</div>
+                        <div class="item">Categories</div>
+                        <div class="item">Products</div>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="text" placeholder="ค้นหาหมวดหมู่ / ชื่่อซอฟท์แวร์หรือโปรดักท์">
+                </div>
+                <div class="search-btn">
+                  <button><i class="las la-search la-flip-horizontal"></i></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </header>
+    <div id="content">
+      <div id="home">
+        <div class="popular">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="main">
+                <div class="title">
+                  <h2>Popular Categories</h2>
+                </div>
+                <div class="excerp">
+                  <p>วิลด์เซ็นเซอร์ ผิดพลาดสปอตยนตรกรรม เกย์ ซูเอี๋ยแรงใจพล็อตฮอตดอก
+                    โคโยตีฟลุคเคลื่อนย้ายพาสเจอร์ไรส์แพลน แรงใจ ไฟลต์ป๊อปรีวิว</p>
+                </div>
+                <div class="popular-links">
+                  <ul>
+                    <li class="item">
+                      <a href="/">
+                        <div class="box">
+                          <div class="icon">
+                            <img src="images/categories-icons/hrmng.png" alt="Parent Category Name">
+                          </div>
+                          <div class="heading">Human Resources
+                            Management System</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="/">
+                        <div class="box">
+                          <div class="icon">
+                            <img src="images/categories-icons/attendance.png" alt="Parent Category Name">
+                          </div>
+                          <div class="heading">Leave and Attendance Management</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="/">
+                        <div class="box">
+                          <div class="icon">
+                            <img src="images/categories-icons/payroll.png" alt="Parent Category Name">
+                          </div>
+                          <div class="heading">Payroll</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="/">
+                        <div class="box">
+                          <div class="icon">
+                            <img src="images/categories-icons/recruiting.png" alt="Parent Category Name">
+                          </div>
+                          <div class="heading">Recruiting Solution</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="/">
+                        <div class="box">
+                          <div class="icon">
+                            <img src="images/categories-icons/employee.png" alt="Parent Category Name">
+                          </div>
+                          <div class="heading">Employee Engagement</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="/">
+                        <div class="box">
+                          <div class="icon">
+                            <img src="images/categories-icons/consulting.png" alt="Parent Category Name">
+                          </div>
+                          <div class="heading">HR Consulting</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="link-arrow">
+                  <a href="/">All Categories<i class="las la-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-tab-display">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="main">
+                <div class="tab-navigation">
+                  <div class="title title-sp">
+                    <h2>Popular HR Softwares Category</h2>
+                  </div>
+                  <div id="owl" class="tab-nav owl-carousel">
+                    <div class="title title-pc">
+                      <h2>Popular HR Softwares Category</h2>
+                    </div>
+                    <button class="tablink active-tab" onclick="openCategory(event,'cat1')">Human
+                      Resources</button>
+                    <button class="tablink item" onclick="openCategory(event,'cat2')">Leave and Attendance
+                      Managment</button>
+                    <button class="tablink item" onclick="openCategory(event,'cat3')">Payroll</button>
+                    <button class="tablink item" onclick="openCategory(event,'cat4')">Employee Engagement</button>
+                    <button class="tablink item" onclick="openCategory(event,'cat5')">HR Consutling</button>
+                    <button class="tablink item" onclick="openCategory(event,'cat6')">Recruiting Solutions</button>
+                  </div>
+                  <div class="product-display">
+                    <div id="cat1" class="category-name">
+                      <div class="product-list">
+                        <ul>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                          <li class="item"><a href="/">
+                              <div class="box">
+                                <div class="img-logo">
+                                  <img src="images/products/demlogo.jpg" alt="Product">
+                                </div>
+                              </div>
+                            </a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div id="cat2" class="category-name" style="display:none">
+                      <p style="font-size: 25px;">Product List</p>
+                    </div>
+                    <div id="cat3" class="category-name" style="display:none">
+                      <p style="font-size: 25px;">Product List 2</p>
+                    </div>
+                    <div id="cat4" class="category-name" style="display:none">
+                      <p style="font-size: 25px;">Product List 3</p>
+                    </div>
+                    <div id="cat5" class="category-name" style="display:none">
+                      <p style="font-size: 25px;">Product List 4</p>
+                    </div>
+                    <div id="cat6" class="category-name" style="display:none">
+                      <p style="font-size: 25px;">Product List 5</p>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="main">
+                <a class="btn-round" href="/">Explore More Categories</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <footer>
       <div class="wrapper">
@@ -122,7 +366,7 @@
                       </div>
                       <div class="text">
                         <a href="https://goo.gl/maps/GMJm1y4h9AwfQ4ig8" target="_blank">
-                          801 8th Floor, Mercury Tower, 540 Ploenchit Road, Lumphini, Pathum Wan, Bangkok 10330
+                          Unit 801 8th Floor, Mercury Tower, 540 Ploenchit Road, Lumphini, Pathum Wan, Bangkok 10330
                         </a>
                       </div>
                     </li>
@@ -131,8 +375,8 @@
                         <i class="las la-phone"></i>
                       </div>
                       <div class="text">
-                        <a href="tel:+66022539800">
-                          (+66)02-253-9800
+                        <a href="tel:+6622539800">
+                          (+66)2-253-9800
                         </a>
                       </div>
                     </li>
@@ -201,13 +445,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="javascript/plugins/semantic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
     integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
     crossorigin="anonymous"></script>
+  <script src="javascript/plugins/owlcarousel/owl.carousel.min.js"></script>
   <script>
     $('.ui.search')
       .search({
@@ -239,6 +484,64 @@
     $('.activating.element')
       .popup()
       ;
+  </script>
+
+  <script>
+    // Switching Tab Navigation Mobile-Desktop
+    var $tabNav = $(".tab-nav");
+
+    $(window).resize(function () {
+      showTabNav();
+    });
+
+    function showTabNav() {
+      if ($tabNav.data("owlCarousel") !== "undefined") {
+        if (window.matchMedia('(max-width: 600px)').matches) {
+          initialTabNav();
+        } else {
+          destroyTabNav();
+        }
+      }
+    }
+    showTabNav();
+
+    function initialTabNav() {
+      $tabNav.addClass("owl-carousel").owlCarousel({
+        items: 1,
+        loop: false,
+        autoplay: false,
+        stagePadding: 50,
+        margin: 10,
+        nav: false,
+      });
+    }
+
+    function destroyTabNav() {
+      $tabNav.trigger("destroy.owl.carousel").removeClass("owl-carousel");
+    }
+
+  </script>
+
+
+
+
+
+
+
+  <script>
+    function openCategory(evt, categoryName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("category-name");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+      }
+      document.getElementById(categoryName).style.display = "block";
+      evt.currentTarget.className += " active-tab";
+    }
   </script>
 </body>
 

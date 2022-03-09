@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap");
-/* Montserrat Font for HR Q&A Branding Logo */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
 /* Primary  */
 /* Secondary */
 .test {
@@ -20,7 +18,8 @@ body {
 }
 
 p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
@@ -29,11 +28,11 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-family: "Mitr", Arial, Helvetica, sans-serif !important;
   color: #000000;
-  font-weight: 700;
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
+  font-weight: unset;
 }
 
 h1 {
@@ -52,11 +51,6 @@ h4 {
   font-size: 1.05em;
 }
 
-h2.main-title {
-  text-align: center;
-  margin-bottom: 1.5rem !important;
-}
-
 /* Element */
 img {
   width: 100%;
@@ -65,6 +59,7 @@ img {
 
 a,
 button {
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   transition: all 0.3s ease-in-out;
@@ -94,6 +89,44 @@ button:focus {
   outline: none !important;
   outline: 0 !important;
   box-shadow: none !important;
+  font-family: unset;
+}
+
+.link-arrow {
+  display: block;
+}
+.link-arrow a {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #F20F38;
+}
+.link-arrow a i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+.link-arrow a:hover, .link-arrow a:focus {
+  color: #F20F38;
+  filter: contrast(150%);
+  -webkit-filter: contrast(150%);
+}
+
+.btn-round {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1em;
+  color: #F20F38;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #F20F38;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+}
+.btn-round:hover, .btn-round:focus {
+  color: white;
+  background: #F20F38;
 }
 
 #page {
@@ -101,6 +134,68 @@ button:focus {
   flex-direction: column;
   height: 100vh;
   min-width: 280px;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+.title h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+.excerp p {
+  font-size: 1.2em;
+}
+
+.search .search-form {
+  display: block;
+}
+.search .search-form .wrap {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  justify-content: space-between;
+  border: 1px solid #F20F38;
+  padding: 12px 20px;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+}
+.search .search-form .wrap .search-key {
+  display: flex;
+  align-items: center;
+}
+.search .search-form .wrap .search-key .selecting-all {
+  z-index: 100;
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
+}
+.search .search-form .wrap .search-key .selecting-all .text {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  padding-right: 4px;
+  margin-right: 8px;
+  border-right: 2px solid #000000;
+  line-height: 15px;
+}
+.search .search-form .wrap .search-key input {
+  min-width: 300px !important;
+  border: none;
+  background: transparent;
+  font-size: 16px !important;
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
+}
+.search .search-form .wrap .search-key input::placeholder {
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #797979;
+}
+.search .search-form .wrap .search-btn .la-search {
+  color: #F20F38;
+  font-size: 20px;
 }
 
 header nav .list {
@@ -114,53 +209,6 @@ header nav .list {
 }
 header nav .logo {
   width: 175px;
-}
-header nav .search .search-form {
-  display: block;
-}
-header nav .search .search-form .wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #F20F38;
-  padding: 12px 20px;
-  border-radius: 100rem;
-  -webkit-border-radius: 100rem;
-  -moz-border-radius: 100rem;
-  -ms-border-radius: 100rem;
-  -o-border-radius: 100rem;
-}
-header nav .search .search-form .wrap .search-key {
-  display: flex;
-  align-items: center;
-}
-header nav .search .search-form .wrap .search-key .selecting-all {
-  z-index: 100;
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
-}
-header nav .search .search-form .wrap .search-key .selecting-all .text {
-  font-size: 16px;
-  color: #000000;
-  font-weight: 500;
-  padding-right: 4px;
-  margin-right: 8px;
-  border-right: 2px solid #000000;
-  line-height: 15px;
-}
-header nav .search .search-form .wrap .search-key input {
-  min-width: 300px !important;
-  border: none;
-  font-size: 16px !important;
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
-}
-header nav .search .search-form .wrap .search-key input::placeholder {
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: #797979;
-}
-header nav .search .search-form .wrap .search-btn .la-search {
-  color: #F20F38;
-  font-size: 20px;
 }
 header nav .btn-group .list {
   display: flex;
@@ -179,7 +227,7 @@ header nav .btn-group .btn-search {
 }
 header nav .btn-group .menu-link {
   font-size: 1.15em;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 header nav .btn-group .menu-link:hover, header nav .btn-group .menu-link:focus {
@@ -192,11 +240,6 @@ header nav .btn-group .menu-link .la-phone {
 }
 header .nav-search-mobile {
   display: none;
-}
-header #banner {
-  width: 100%;
-  height: 25vw;
-  background: gainsboro;
 }
 
 #content {
@@ -229,7 +272,7 @@ footer .information {
 footer .information a {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 400 !important;
 }
 footer .information a:hover, footer .information a:focus {
   opacity: 0.7;
@@ -267,7 +310,7 @@ footer .information .links li {
 }
 footer .information .links li a {
   font-size: 1.2em;
-  font-weight: 700;
+  font-weight: 500;
 }
 footer .socials {
   display: flex;
@@ -391,9 +434,6 @@ footer .copyright {
     color: #F20F38;
     font-size: 20px;
   }
-  header #banner {
-    height: 150px;
-  }
 
   .wrapper {
     max-width: 1600px;
@@ -439,7 +479,7 @@ footer .copyright {
   }
   footer .information .links ul li a {
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 500;
   }
   footer .socials ul li a {
     color: #FFFFFF;

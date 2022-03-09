@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap");
-/* Montserrat Font for HR Q&A Branding Logo */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
 @import "colors";
+// 300 - Light (Body Text), 400 - Regular, 500 - Bold (Title/Heading)
+
 
 body {
   font-family: "Mitr", Arial, Helvetica, sans-serif;
@@ -12,8 +12,8 @@ body {
 }
 
 p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
@@ -22,11 +22,11 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-family: "Mitr", Arial, Helvetica, sans-serif !important;
   color: $black;
-  font-weight: 700;
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
+  font-weight: unset;
 }
 
 h1 {
@@ -45,10 +45,6 @@ h4 {
   font-size: 1.05em;
 }
 
-h2.main-title {
-  text-align: center;
-  margin-bottom: 1.5rem !important;
-}
 
 /* Element */
 img {
@@ -57,6 +53,7 @@ img {
 }
 a,
 button {
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   transition: all 0.3s ease-in-out;
@@ -85,6 +82,43 @@ button:focus {
   outline: none !important;
   outline: 0 !important;
   box-shadow: none !important;
+  font-family: unset;
+}
+.link-arrow {
+  display: block;
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: $red-primary;
+    i {
+      margin-left: 5px;
+      font-size: 18px;
+    }
+    &:hover,
+    &:focus {
+      color: $red-primary;
+      filter: contrast(150%);
+      -webkit-filter: contrast(150%);
+    }
+  }
+}
+.btn-round {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1em;
+  color: $red-primary;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid $red-primary;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+  &:hover, &:focus {
+    color: white;
+    background: $red-primary;
+  }
 }
 
 #page {
@@ -92,6 +126,73 @@ button:focus {
   flex-direction: column;
   height: 100vh;
   min-width: 280px;
+}
+.title {
+  margin-bottom: 1.5rem;
+  h2 {
+    font-size: 1.75em;
+    font-weight: 500;
+  }
+}
+.excerp {
+  p {
+    font-size: 1.2em;
+  }
+}
+
+//Global Search Style
+.search {
+  .search-form {
+    display: block;
+    .wrap {
+      display: flex;
+      align-items: center;
+      background: $white;
+      justify-content: space-between;
+      border: 1px solid $red-primary;
+      padding: 12px 20px;
+      border-radius: 100rem;
+      -webkit-border-radius: 100rem;
+      -moz-border-radius: 100rem;
+      -ms-border-radius: 100rem;
+      -o-border-radius: 100rem;
+      .search-key {
+        display: flex;
+        align-items: center;
+        .selecting-all {
+          z-index: 100;
+          font-family: "Mitr", Arial, Helvetica, sans-serif;
+          .text {
+            font-size: 16px;
+            color: $black;
+            font-weight: 500;
+            padding-right: 4px;
+            margin-right: 8px;
+            border-right: 2px solid $black;
+            line-height: 15px;
+          }
+        }
+        input {
+          min-width: 300px !important;
+          border: none;
+          background: transparent;
+          font-size: 16px !important;
+          font-family: "Mitr", Arial, Helvetica, sans-serif;
+          &::placeholder {
+            font-family: "Mitr", Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #797979;
+          }
+        }
+      }
+      .search-btn {
+        .la-search {
+          color: $red-primary;
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 header {
   nav {
@@ -107,58 +208,6 @@ header {
 
     .logo {
       width: 175px;
-    }
-
-    .search {
-      .search-form {
-        display: block;
-        .wrap {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          border: 1px solid $red-primary;
-          padding: 12px 20px;
-          border-radius: 100rem;
-          -webkit-border-radius: 100rem;
-          -moz-border-radius: 100rem;
-          -ms-border-radius: 100rem;
-          -o-border-radius: 100rem;
-          .search-key {
-            display: flex;
-            align-items: center;
-            .selecting-all {
-              z-index: 100;
-              font-family: "Mitr", Arial, Helvetica, sans-serif;
-              .text {
-                font-size: 16px;
-                color: $black;
-                font-weight: 500;
-                padding-right: 4px;
-                margin-right: 8px;
-                border-right: 2px solid $black;
-                line-height: 15px;
-              }
-            }
-            input {
-              min-width: 300px !important;
-              border: none;
-              font-size: 16px !important;
-              font-family: "Mitr", Arial, Helvetica, sans-serif;
-              &::placeholder {
-                font-family: "Mitr", Arial, Helvetica, sans-serif;
-                font-size: 16px;
-                color: #797979;
-              }
-            }
-          }
-          .search-btn {
-            .la-search {
-              color: $red-primary;
-              font-size: 20px;
-            }
-          }
-        }
-      }
     }
 
     .btn-group {
@@ -181,7 +230,7 @@ header {
       }
       .menu-link {
         font-size: 1.15em;
-        font-weight: 700;
+        font-weight: 500;
         color: $black;
         &:hover,
         &:focus {
@@ -198,11 +247,6 @@ header {
 
   .nav-search-mobile {
     display: none;
-  }
-  #banner {
-    width: 100%;
-    height: 25vw;
-    background: rgb(220, 220, 220);
   }
 }
 
@@ -237,7 +281,7 @@ footer {
     a {
       color: rgba(255, 255, 255, 0.8);
       font-size: 1em;
-      font-weight: 500;
+      font-weight: 400 !important;
       &:hover,
       &:focus {
         opacity: 0.7;
@@ -276,7 +320,7 @@ footer {
         margin-bottom: 0.5rem;
         a {
           font-size: 1.2em;
-          font-weight: 700;
+          font-weight: 500;
         }
       }
     }
@@ -420,9 +464,6 @@ footer {
         }
       }
     }
-    #banner {
-      height: 150px;
-    }
   }
 
   .wrapper {
@@ -472,7 +513,7 @@ footer {
             margin-bottom: 0.5rem;
             a {
               font-size: 1.2em;
-              font-weight: 700;
+              font-weight: 500;
             }
           }
         }
