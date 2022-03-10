@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-family: "Mitr", Arial, Helvetica, sans-serif !important;
   font-size: 16px;
   color: #4D4D4D;
   background-color: #FFFFFF;
@@ -22,6 +22,7 @@ p {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  font-size: 1.2em;
 }
 
 h1,
@@ -31,8 +32,8 @@ h4 {
   font-family: "Mitr", Arial, Helvetica, sans-serif !important;
   color: #000000;
   padding: 0;
-  margin: 0 !important;
-  font-weight: unset;
+  margin: unset !important;
+  font-weight: 500 !important;
 }
 
 h1 {
@@ -51,7 +52,7 @@ h4 {
   font-size: 1.05em;
 }
 
-/* Element */
+/* Global Element */
 img {
   width: 100%;
   height: auto;
@@ -59,7 +60,7 @@ img {
 
 a,
 button {
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-family: "Mitr", Arial, Helvetica, sans-serif !important;
   display: flex;
   align-items: center;
   transition: all 0.3s ease-in-out;
@@ -100,6 +101,7 @@ button:focus {
   align-items: center;
   font-size: 1em;
   color: #F20F38;
+  line-height: 1.5rem;
 }
 .link-arrow a i {
   margin-left: 5px;
@@ -129,6 +131,24 @@ button:focus {
   background: #F20F38;
 }
 
+#breadcrumb .main {
+  padding-bottom: 0;
+}
+#breadcrumb .breadcrumb a {
+  color: #4D4D4D;
+  font-size: 1em;
+  font-weight: 300;
+}
+#breadcrumb .breadcrumb a:hover, #breadcrumb .breadcrumb a:focus, #breadcrumb .breadcrumb a:active {
+  color: #F20F38;
+  font-size: 1em;
+}
+#breadcrumb .breadcrumb .active.section {
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-weight: 500 !important;
+  color: #000000;
+}
+
 #page {
   display: flex;
   flex-direction: column;
@@ -142,6 +162,7 @@ button:focus {
 .title h2 {
   font-size: 1.75em;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 .excerp p {
@@ -198,6 +219,9 @@ button:focus {
   font-size: 20px;
 }
 
+header nav {
+  border-bottom: 1px solid #C3C3C3;
+}
 header nav .list {
   display: flex;
   flex-direction: row;
@@ -244,6 +268,7 @@ header .nav-search-mobile {
 
 #content {
   flex: 1 1 auto;
+  padding: 1rem 0;
 }
 
 .wrapper {
@@ -258,13 +283,14 @@ header .nav-search-mobile {
 }
 .wrapper .main {
   flex: 1 1 auto;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 footer {
   background: #171717;
   width: 100%;
   color: #FFFFFF;
+  padding: 2rem 0;
 }
 footer .information {
   display: flex;
@@ -421,7 +447,7 @@ footer .copyright {
     line-height: 15px;
   }
   header .nav-search-mobile .search-form .wrap .search-key input {
-    min-width: 250px;
+    min-width: 200px;
     border: none;
     font-size: 16px !important;
     font-family: "Mitr", Arial, Helvetica, sans-serif;

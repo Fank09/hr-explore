@@ -30,7 +30,7 @@
 }
 #banner .caption h2 {
   font-size: 1.25em;
-  font-weight: 300;
+  font-weight: 300 !important;
   color: #FFFFFF;
   line-height: 2rem;
   margin-bottom: 1.5rem !important;

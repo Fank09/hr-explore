@@ -2,9 +2,8 @@
 @import "colors";
 // 300 - Light (Body Text), 400 - Regular, 500 - Bold (Title/Heading)
 
-
 body {
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-family: "Mitr", Arial, Helvetica, sans-serif !important;
   font-size: 16px;
   color: $gray;
   background-color: $white;
@@ -16,6 +15,7 @@ p {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  font-size: 1.2em;
 }
 
 h1,
@@ -25,8 +25,8 @@ h4 {
   font-family: "Mitr", Arial, Helvetica, sans-serif !important;
   color: $black;
   padding: 0;
-  margin: 0 !important;
-  font-weight: unset;
+  margin: unset !important;
+  font-weight: 500 !important;
 }
 
 h1 {
@@ -45,15 +45,14 @@ h4 {
   font-size: 1.05em;
 }
 
-
-/* Element */
+/* Global Element */
 img {
   width: 100%;
   height: auto;
 }
 a,
 button {
-  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-family: "Mitr", Arial, Helvetica, sans-serif !important;
   display: flex;
   align-items: center;
   transition: all 0.3s ease-in-out;
@@ -91,6 +90,7 @@ button:focus {
     align-items: center;
     font-size: 1em;
     color: $red-primary;
+    line-height: 1.5rem;
     i {
       margin-left: 5px;
       font-size: 18px;
@@ -115,9 +115,33 @@ button:focus {
   -moz-border-radius: 100rem;
   -ms-border-radius: 100rem;
   -o-border-radius: 100rem;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: white;
     background: $red-primary;
+  }
+}
+#breadcrumb {
+  .main {
+    padding-bottom: 0;
+  }
+  .breadcrumb {
+    a {
+      color: $gray;
+      font-size: 1em;
+      font-weight: 300;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $red-primary;
+        font-size: 1em;
+      }
+    }
+    & .active.section {
+      font-family: "Mitr", Arial, Helvetica, sans-serif;
+      font-weight: 500 !important;
+      color: $black;
+    }
   }
 }
 
@@ -132,6 +156,7 @@ button:focus {
   h2 {
     font-size: 1.75em;
     font-weight: 500;
+    text-transform: capitalize;
   }
 }
 .excerp {
@@ -196,6 +221,7 @@ button:focus {
 }
 header {
   nav {
+    border-bottom: 1px solid $border-color;
     .list {
       display: flex;
       flex-direction: row;
@@ -252,6 +278,7 @@ header {
 
 #content {
   flex: 1 1 auto;
+  padding: 1rem 0;
 }
 
 .wrapper {
@@ -268,7 +295,7 @@ header {
   .main {
     // width: 100%;
     flex: 1 1 auto;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 }
 
@@ -276,6 +303,7 @@ footer {
   background: rgb(23, 23, 23);
   width: 100%;
   color: $white;
+  padding: 2rem 0;
   .information {
     display: flex;
     a {
@@ -445,7 +473,7 @@ footer {
               }
             }
             input {
-              min-width: 250px;
+              min-width: 200px;
               border: none;
               font-size: 16px !important;
               font-family: "Mitr", Arial, Helvetica, sans-serif;

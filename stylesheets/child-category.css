@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap");
+/* Primary  */
+/* Secondary */
+.test {
+  border-radius: 1px solid #F20F38;
+  -webkit-border-radius: 1px solid #F20F38;
+  -moz-border-radius: 1px solid #F20F38;
+  -ms-border-radius: 1px solid #F20F38;
+  -o-border-radius: 1px solid #F20F38;
+}
+
+#childCategory .tab-navigation .tabs {
+  display: flex;
+}
+#childCategory .tab-navigation .tabs .tablink {
+  font-family: "Mitr", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: #F20F38;
+  padding: 20px 20px;
+  border: 1px solid #F20F38;
+  margin-right: 15px;
+}
+#childCategory .tab-navigation .tabs .tablink.active-tab {
+  color: #FFFFFF;
+  background: #F20F38;
+}
+#childCategory .tab-content {
+  background: #f7f7f7;
+  padding: 2rem 0;
+}
+#childCategory .tab-content .content-box {
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1px solid #C3C3C3;
+  margin-bottom: 1rem;
+}
+#childCategory .tab-content .content-box > * {
+  margin-bottom: 0.5rem;
+}
+#childCategory .tab-content .content-box .heading h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+#childCategory .tab-content .content-box .sub-heading h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+#childCategory .tab-content .content-box p {
+  font-size: 1.2em;
+}
+#childCategory .tab-content #productTab .sorting {
+  text-align: right;
+  padding: 1rem 0;
+}
+#childCategory .tab-content #productTab .sorting .dropdown .text {
+  font-weight: 500;
+  color: #F20F38;
+}
+#childCategory .tab-content #productTab .sorting .dropdown .menu .active.item {
+  font-weight: 500;
+}
+#childCategory .tab-content #productTab .information {
+  display: flex;
+}
+#childCategory .tab-content #productTab .information .sidebar {
+  width: 300px;
+  margin-right: 1.5rem;
+  padding: 1rem 1rem;
+  background: white;
+  border: 1px solid #C3C3C3;
+}
+#childCategory .tab-content #productTab .information .sidebar .links {
+  padding: 1rem 0;
+}
+#childCategory .tab-content #productTab .information .sidebar .links ul li {
+  margin-bottom: 8px;
+}
+#childCategory .tab-content #productTab .information .sidebar .links ul li a {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+}
+#childCategory .tab-content #productTab .information .sidebar .links ul li a:hover, #childCategory .tab-content #productTab .information .sidebar .links ul li a:focus {
+  color: #F20F38;
+}
+#childCategory .tab-content #productTab .information .sidebar .links ul li a .number {
+  color: #F20F38;
+  margin-left: 10px;
+}
+#childCategory .tab-content #productTab .information .sidebar .button .btn-round {
+  padding: 8px 15px;
+}
+#childCategory .tab-content #productTab .information .products-list {
+  width: 100%;
+}
+#childCategory .tab-content #productTab .information .products-list ul li {
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+#childCategory .tab-content #productTab .information .products-list ul li:hover ::before, #childCategory .tab-content #productTab .information .products-list ul li:focus .box {
+  background: #f7f7f7;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box {
+  padding: 1rem 1rem;
+  background: white;
+  border: 1px solid #C3C3C3;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .product-logo {
+  display: flex;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .product-logo .logo {
+  width: 90px;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .product-logo .product-name {
+  padding-left: 1.5rem;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .product-logo .product-name .heading a {
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .product-logo .product-name .heading a:hover, #childCategory .tab-content #productTab .information .products-list ul li .box .product-logo .product-name .heading a:focus {
+  color: #4D4D4D;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .excerp {
+  padding: 1rem 0;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .excerp p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .show-more button {
+  display: flex;
+  align-items: center;
+  color: #4D4D4D;
+  font-size: 14px;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .show-more button i {
+  margin-left: 2px;
+  font-size: 14px;
+}
+#childCategory .tab-content #productTab .information .products-list ul li .box .show-more button:hover, #childCategory .tab-content #productTab .information .products-list ul li .box .show-more button:focus {
+  color: #000000;
+}
+#childCategory .tab-content #productTab .information .products-list .paging {
+  display: flex;
+  justify-content: center;
+}
+#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item {
+  margin: 1.5rem 0.5rem;
+}
+#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link {
+  cursor: pointer;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: 1px solid #F20F38;
+  color: #F20F38;
+}
+#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link:hover, #childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link:focus {
+  background: #f2f2f2;
+}
+#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.active {
+  background: #F20F38 !important;
+  color: #FFFFFF;
+}
+#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.prev, #childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.next {
+  border: 0 !important;
+  color: #4D4D4D;
+}
+#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.prev {
+  color: #a5a5a5;
+}
