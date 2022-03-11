@@ -22,51 +22,65 @@
   .tab-content {
     background: #f7f7f7;
     padding: 2rem 0;
-      .content-box {
-        padding: 1rem 1.5rem;
-        background: white;
-        border: 1px solid $border-color;
-        margin-bottom: 1rem;
-        & > * {
-          margin-bottom: 0.5rem;
-        }
-        .heading {
-          h2 {
-            font-size: 1.5em;
-            font-weight: 500;
-          }
-        }
-        .sub-heading {
-          h3 {
-            font-size: 1.2em;
-            font-weight: 400;
-          }
-        }
-        p {
-          font-size: 1.2em;
+    .content-box {
+      padding: 1rem 1.5rem;
+      background: white;
+      border: 1px solid $border-color;
+      margin-bottom: 1rem;
+      & > * {
+        margin-bottom: 0.5rem;
+      }
+      .heading {
+        h2 {
+          font-size: 1.5em;
+          font-weight: 500;
         }
       }
-
-  
+      .sub-heading {
+        h3 {
+          font-size: 1.2em;
+          font-weight: 400;
+        }
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
 
     #productTab {
+      .category-filter-sp {
+        display: none;
+      }
       .sorting {
         text-align: right;
         padding: 1rem 0;
-        .dropdown {
-          .text {
-            font-weight: 500;
-            color: $red-primary;
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .la-sliders-h {
+            font-size: 28px;
+            color: $black;
+            margin-right: 10px;
           }
-          .menu .active.item {
-            font-weight: 500;
+          .dropdown {
+            .text {
+              font-weight: 500;
+              color: $red-primary;
+            }
+            .menu .active.item {
+              font-weight: 500;
+            }
           }
         }
       }
       .information {
         display: flex;
         .sidebar {
+          display: block;
           width: 300px;
+          height: fit-content;
           margin-right: 1.5rem;
           padding: 1rem 1rem;
           background: white;
@@ -184,7 +198,8 @@
                   -o-border-radius: 0;
                   border: 1px solid $red-primary;
                   color: $red-primary;
-                  &:hover, &:focus {
+                  &:hover,
+                  &:focus {
                     background: #f2f2f2;
                   }
                   &.active {
@@ -192,12 +207,116 @@
                     color: $white;
                   }
                 }
-                .page-link.prev, .page-link.next {
+                .page-link.prev,
+                .page-link.next {
                   border: 0 !important;
                   color: $gray;
                 }
                 .page-link.prev {
                   color: #a5a5a5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  #childCategory {
+    .tab-navigation {
+      .tabs {
+        .tablink {
+          font-size: 1em;
+          padding: 15px 20px;
+        }
+      }
+    }
+    .tab-content {
+      padding: 1rem 0;
+      .content-box {
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        & > * {
+          margin-bottom: 0.5rem;
+        }
+        .heading {
+          h2 {
+            font-size: 1.5em;
+            font-weight: 500;
+          }
+        }
+        .sub-heading {
+          h3 {
+            font-size: 1.2em;
+            font-weight: 400;
+          }
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+
+      #productTab {
+        .sorting {
+          text-align: left;
+          padding: 1rem 0;
+          .la-sliders-h {
+            font-size: 20px;
+          }
+        }
+        .category-filter-sp {
+          display: block;
+          margin-bottom: 1rem;
+          .text {
+            border: 1px solid $border-color;
+            padding: 10px 10px;
+            font-weight: 400;
+            border-radius: 100rem;
+            -webkit-border-radius: 100rem;
+            -moz-border-radius: 100rem;
+            -ms-border-radius: 100rem;
+            -o-border-radius: 100rem;
+          }
+        }
+        .information {
+          display: flex;
+          .sidebar {
+            display: none;
+          }
+          .products-list {
+            width: 100%;
+            ul {
+              li {
+                margin-bottom: 1rem;
+                .box {
+                  padding: 1rem 1rem;
+                  .product-logo {
+                    display: flex;
+                    .logo {
+                      width: 60px;
+                    }
+                    .product-name {
+                      padding-left: 1.5rem;
+                      .heading {
+                        a {
+                          font-size: 1.2em;
+                        }
+                      }
+                    }
+                  }
+                  .excerp {
+                    padding: 1rem 0;
+                  }
+                  .show-more {
+                    button {
+                      font-size: 12px;
+                      i {
+                        font-size: 12px;
+                      }
+                    }
+                  }
                 }
               }
             }

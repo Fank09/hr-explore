@@ -48,22 +48,37 @@
 #childCategory .tab-content .content-box p {
   font-size: 1.2em;
 }
+#childCategory .tab-content #productTab .category-filter-sp {
+  display: none;
+}
 #childCategory .tab-content #productTab .sorting {
   text-align: right;
   padding: 1rem 0;
 }
-#childCategory .tab-content #productTab .sorting .dropdown .text {
+#childCategory .tab-content #productTab .sorting .content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#childCategory .tab-content #productTab .sorting .content .la-sliders-h {
+  font-size: 28px;
+  color: #000000;
+  margin-right: 10px;
+}
+#childCategory .tab-content #productTab .sorting .content .dropdown .text {
   font-weight: 500;
   color: #F20F38;
 }
-#childCategory .tab-content #productTab .sorting .dropdown .menu .active.item {
+#childCategory .tab-content #productTab .sorting .content .dropdown .menu .active.item {
   font-weight: 500;
 }
 #childCategory .tab-content #productTab .information {
   display: flex;
 }
 #childCategory .tab-content #productTab .information .sidebar {
+  display: block;
   width: 300px;
+  height: fit-content;
   margin-right: 1.5rem;
   padding: 1rem 1rem;
   background: white;
@@ -175,10 +190,96 @@
   background: #F20F38 !important;
   color: #FFFFFF;
 }
-#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.prev, #childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.next {
+#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.prev,
+#childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.next {
   border: 0 !important;
   color: #4D4D4D;
 }
 #childCategory .tab-content #productTab .information .products-list .paging .pagination .page-item .page-link.prev {
   color: #a5a5a5;
+}
+
+@media only screen and (max-width: 991px) {
+  #childCategory .tab-navigation .tabs .tablink {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
+  #childCategory .tab-content {
+    padding: 1rem 0;
+  }
+  #childCategory .tab-content .content-box {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+  }
+  #childCategory .tab-content .content-box > * {
+    margin-bottom: 0.5rem;
+  }
+  #childCategory .tab-content .content-box .heading h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  #childCategory .tab-content .content-box .sub-heading h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+  #childCategory .tab-content .content-box p {
+    font-size: 1em;
+  }
+  #childCategory .tab-content #productTab .sorting {
+    text-align: left;
+    padding: 1rem 0;
+  }
+  #childCategory .tab-content #productTab .sorting .la-sliders-h {
+    font-size: 20px;
+  }
+  #childCategory .tab-content #productTab .category-filter-sp {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  #childCategory .tab-content #productTab .category-filter-sp .text {
+    border: 1px solid #C3C3C3;
+    padding: 10px 10px;
+    font-weight: 400;
+    border-radius: 100rem;
+    -webkit-border-radius: 100rem;
+    -moz-border-radius: 100rem;
+    -ms-border-radius: 100rem;
+    -o-border-radius: 100rem;
+  }
+  #childCategory .tab-content #productTab .information {
+    display: flex;
+  }
+  #childCategory .tab-content #productTab .information .sidebar {
+    display: none;
+  }
+  #childCategory .tab-content #productTab .information .products-list {
+    width: 100%;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li {
+    margin-bottom: 1rem;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li .box {
+    padding: 1rem 1rem;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li .box .product-logo {
+    display: flex;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li .box .product-logo .logo {
+    width: 60px;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li .box .product-logo .product-name {
+    padding-left: 1.5rem;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li .box .product-logo .product-name .heading a {
+    font-size: 1.2em;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li .box .excerp {
+    padding: 1rem 0;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li .box .show-more button {
+    font-size: 12px;
+  }
+  #childCategory .tab-content #productTab .information .products-list ul li .box .show-more button i {
+    font-size: 12px;
+  }
 }
