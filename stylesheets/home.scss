@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap");
 @import "colors";
+html {
+  scroll-behavior: smooth;
+}
 
 #banner {
   display: flex;
@@ -84,42 +87,38 @@
         }
       }
     }
-    .link-arrow {
-      a {
-        justify-content: center;
-      }
+    .button{
+      text-align: center;
     }
   }
   .product-tab-display {
+    .title {
+      margin-bottom: 2rem;
+    }
     .tab-navigation {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex: row;
-      .title-pc {
-        display: block;
-      }
-      .title-sp {
-        display: none;
-      }
       .tab-nav {
         width: 40%;
         .tablink {
           font-family: "Mitr", Arial, Helvetica, sans-serif;
           font-size: 1.2em;
           color: $black;
-          margin-bottom: 1rem;
+          margin-bottom: 1.2rem;
+          text-align: left;
         }
         .tablink.active-tab {
           color: $red-primary;
         }
       }
       .product-display {
-        width: 600px;
+        width: 60%;
         .product-list {
           ul {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
             .item {
               margin: 0 5px;
@@ -145,6 +144,7 @@
                   -ms-transition: all 0.4s ease-in-out;
                   -o-transition: all 0.4s ease-in-out;
                   .img-logo {
+                    width: 90px;
                     img {
                       width: 100%;
                       height: auto;
@@ -161,9 +161,12 @@
         }
       }
     }
-  }
-  .button {
-    text-align: center;
+    .link-arrow {
+      padding: 1rem 0;
+      a {
+        justify-content: center;
+      }
+    }
   }
 }
 
@@ -257,15 +260,11 @@
       
     }
     .product-tab-display {
+      .title {
+        text-align: center;
+      }
       .tab-navigation {
         flex-direction: column;
-        .title-pc {
-          display: none;
-        }
-        .title-sp {
-          display: block;
-          text-align: center;
-        }
         #owl {
           .owl-stage {
             display: flex;
@@ -274,9 +273,6 @@
           }
           .owl-item {
             width: auto !important;
-          }
-          .owl-item.active {
-            margin-right: 0 !important;
           }
         }
         .tab-nav {
@@ -301,7 +297,7 @@
         .product-display {
           width: 100%;
           .product-list {
-            padding: 2rem 0;
+            padding: 1rem 0;
             ul {
               display: flex;
               align-items: center;
@@ -319,6 +315,7 @@
                     height: 100px;
                     padding: 10px 10px;
                     .img-logo {
+                      width: 50px;
                       img {
                         width: 100%;
                         height: auto;
@@ -334,6 +331,9 @@
             }
           }
         }
+      }
+      .link-arrow {
+        padding: 0;
       }
     }
   }

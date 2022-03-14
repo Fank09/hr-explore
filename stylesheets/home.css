@@ -9,6 +9,10 @@
   -o-border-radius: 1px solid #F20F38;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #banner {
   display: flex;
   width: 100%;
@@ -87,19 +91,16 @@
 #home .popular .popular-links ul .item a:hover .box, #home .popular .popular-links ul .item a:focus .box {
   border: 1px solid #666666;
 }
-#home .popular .link-arrow a {
-  justify-content: center;
+#home .popular .button {
+  text-align: center;
+}
+#home .product-tab-display .title {
+  margin-bottom: 2rem;
 }
 #home .product-tab-display .tab-navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex: row;
-}
-#home .product-tab-display .tab-navigation .title-pc {
-  display: block;
-}
-#home .product-tab-display .tab-navigation .title-sp {
-  display: none;
 }
 #home .product-tab-display .tab-navigation .tab-nav {
   width: 40%;
@@ -108,18 +109,19 @@
   font-family: "Mitr", Arial, Helvetica, sans-serif;
   font-size: 1.2em;
   color: #000000;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: left;
 }
 #home .product-tab-display .tab-navigation .tab-nav .tablink.active-tab {
   color: #F20F38;
 }
 #home .product-tab-display .tab-navigation .product-display {
-  width: 600px;
+  width: 60%;
 }
 #home .product-tab-display .tab-navigation .product-display .product-list ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 #home .product-tab-display .tab-navigation .product-display .product-list ul .item {
@@ -146,6 +148,9 @@
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
 }
+#home .product-tab-display .tab-navigation .product-display .product-list ul .item a .box .img-logo {
+  width: 90px;
+}
 #home .product-tab-display .tab-navigation .product-display .product-list ul .item a .box .img-logo img {
   width: 100%;
   height: auto;
@@ -153,8 +158,11 @@
 #home .product-tab-display .tab-navigation .product-display .product-list ul .item a:hover .box, #home .product-tab-display .tab-navigation .product-display .product-list ul .item a:focus {
   border: 1px solid #F20F38;
 }
-#home .button {
-  text-align: center;
+#home .product-tab-display .link-arrow {
+  padding: 1rem 0;
+}
+#home .product-tab-display .link-arrow a {
+  justify-content: center;
 }
 
 @media only screen and (max-width: 991px) {
@@ -229,15 +237,11 @@
   #home .popular .popular-links ul .item a:hover .box, #home .popular .popular-links ul .item a:focus .box {
     border: 1px solid #666666;
   }
+  #home .product-tab-display .title {
+    text-align: center;
+  }
   #home .product-tab-display .tab-navigation {
     flex-direction: column;
-  }
-  #home .product-tab-display .tab-navigation .title-pc {
-    display: none;
-  }
-  #home .product-tab-display .tab-navigation .title-sp {
-    display: block;
-    text-align: center;
   }
   #home .product-tab-display .tab-navigation #owl .owl-stage {
     display: flex;
@@ -246,9 +250,6 @@
   }
   #home .product-tab-display .tab-navigation #owl .owl-item {
     width: auto !important;
-  }
-  #home .product-tab-display .tab-navigation #owl .owl-item.active {
-    margin-right: 0 !important;
   }
   #home .product-tab-display .tab-navigation .tab-nav {
     width: 100%;
@@ -273,7 +274,7 @@
     width: 100%;
   }
   #home .product-tab-display .tab-navigation .product-display .product-list {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
   #home .product-tab-display .tab-navigation .product-display .product-list ul {
     display: flex;
@@ -293,11 +294,17 @@
     height: 100px;
     padding: 10px 10px;
   }
+  #home .product-tab-display .tab-navigation .product-display .product-list ul .item a .box .img-logo {
+    width: 50px;
+  }
   #home .product-tab-display .tab-navigation .product-display .product-list ul .item a .box .img-logo img {
     width: 100%;
     height: auto;
   }
   #home .product-tab-display .tab-navigation .product-display .product-list ul .item a:hover .box, #home .product-tab-display .tab-navigation .product-display .product-list ul .item a:focus {
     border: 1px solid #F20F38;
+  }
+  #home .product-tab-display .link-arrow {
+    padding: 0;
   }
 }
