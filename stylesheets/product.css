@@ -127,9 +127,6 @@
   .product .header .product-header .img-box .img-logo {
     width: 60px;
   }
-  .product .header .product-header .product-header-info h2 {
-    font-size: 1em !important;
-  }
   .product .header .product-header .product-header-info .related-category-link {
     display: none;
   }
