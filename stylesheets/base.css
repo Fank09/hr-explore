@@ -286,6 +286,39 @@ header .nav-search-mobile {
   padding: 1.5rem 0;
 }
 
+.paging {
+  display: flex;
+  justify-content: center;
+}
+.paging .pagination .page-item {
+  margin: 1.5rem 0.5rem;
+}
+.paging .pagination .page-item .page-link {
+  cursor: pointer;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: 1px solid #F20F38;
+  color: #F20F38;
+}
+.paging .pagination .page-item .page-link:hover, .paging .pagination .page-item .page-link:focus {
+  background: #f2f2f2;
+}
+.paging .pagination .page-item .page-link.active {
+  background: #F20F38 !important;
+  color: #FFFFFF;
+}
+.paging .pagination .page-item .page-link.prev,
+.paging .pagination .page-item .page-link.next {
+  border: 0 !important;
+  color: #4D4D4D;
+}
+.paging .pagination .page-item .page-link.prev {
+  color: #a5a5a5;
+}
+
 footer {
   background: #171717;
   width: 100%;

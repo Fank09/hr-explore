@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap");
+/* Primary  */
+/* Secondary */
+.test {
+  border-radius: 1px solid #F20F38;
+  -webkit-border-radius: 1px solid #F20F38;
+  -moz-border-radius: 1px solid #F20F38;
+  -ms-border-radius: 1px solid #F20F38;
+  -o-border-radius: 1px solid #F20F38;
+}
+
+#search h2 span {
+  color: #F20F38;
+}
+#search .search-result .title p {
+  font-size: 1.2em;
+  color: #4D4D4D;
+  padding-top: 10px;
+}
+#search .search-result .title p .result-number {
+  font-weight: 400;
+  margin-right: 10px;
+  color: #000000;
+}
+#search .result-box {
+  padding: 2rem 2rem;
+  border: 1px solid #C3C3C3;
+}
+#search .result-box ul .category-link {
+  margin-bottom: 1.5rem;
+}
+#search .result-box ul .category-link a {
+  color: #000000;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+#search .result-box ul .category-link a:hover, #search .result-box ul .category-link a:focus {
+  color: #F20F38;
+}
+#search .result-box ul .category-link .excerp {
+  width: 80%;
+}
+#search .result-box ul .category-link .excerp p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#search .result-box ul .product-link {
+  display: flex;
+  align-items: flex-start;
+}
+#search .result-box ul .product-link .logo {
+  width: 80px;
+  margin-right: 2rem;
+}
+#search .result-box ul .product-link .info {
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  #search .search-result .title p {
+    font-size: 1.2em;
+  }
+  #search .result-box {
+    padding: 1rem 1rem;
+  }
+  #search .result-box ul .category-link {
+    margin-bottom: 1rem;
+  }
+  #search .result-box ul .category-link a {
+    color: #000000;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  #search .result-box ul .category-link .excerp {
+    width: 100%;
+  }
+  #search .result-box ul .category-link .excerp p {
+    font-size: 1em;
+  }
+  #search .result-box ul .product-link .logo {
+    width: 80px;
+    margin-right: 1rem;
+  }
+}
