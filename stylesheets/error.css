@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&display=swap");
+/* Primary  */
+/* Secondary */
+.test {
+  border-radius: 1px solid #F20F38;
+  -webkit-border-radius: 1px solid #F20F38;
+  -moz-border-radius: 1px solid #F20F38;
+  -ms-border-radius: 1px solid #F20F38;
+  -o-border-radius: 1px solid #F20F38;
+}
+
+#error {
+  padding: 2rem 0;
+}
+#error .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#error .main .caption {
+  text-align: center;
+}
+#error .main .caption h2 {
+  color: #F20F38;
+  font-size: 2em;
+}
+#error .main .caption .text {
+  padding: 1rem 0;
+}
+#error .main .img {
+  padding: 2rem 0;
+  width: 200px;
+}
+
+@media only screen and (max-width: 991px) {
+  #error {
+    padding: 2rem 0;
+  }
+  #error .main .text {
+    padding: 1rem 0;
+  }
+  #error .img {
+    width: 150px;
+    padding: 1rem 0;
+  }
+}
